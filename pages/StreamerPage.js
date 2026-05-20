@@ -3,61 +3,61 @@ const StreamerPage = () => {
     const categories = [
         {
             title: "All",
-            image: "../images/all.png",
+            image: "images/all.png",
             live: "84"
         },
 
         {
             title: "Game Talk",
-            image: "../images/Game Talk.webp",
+            image: "images/Game Talk.webp",
             live: "14"
         },
 
         {
             title: "Other Games",
-            image: "../images/Other Games.webp",
+            image: "images/Other Games.webp",
             live: "23"
         },
 
         {
             title: "VMP",
-            image: "../images/VMP.webp",
+            image: "images/VMP.webp",
             live: "7"
         },
 
         {
             title: "Minecraft",
-            image: "../images/Minecraft.webp",
+            image: "images/Minecraft.webp",
             live: "19"
         },
 
         {
             title: "PUBG MOBILE",
-            image: "../images/PUBG MOBILE.webp",
+            image: "images/PUBG MOBILE.webp",
             live: "31"
         },
 
         {
             title: "Call of Duty: Mobile",
-            image: "../images/Call of Duty Mobile.webp",
+            image: "images/Call of Duty Mobile.webp",
             live: "16"
         },
 
         {
             title: "Valorant",
-            image: "../images/Valorant.jfif",
+            image: "images/Valorant.jfif",
             live: "12"
         },
 
         {
             title: "Fortnite",
-            image: "../images/Fortnite.webp",
+            image: "images/Fortnite.webp",
             live: "10"
         },
 
         {
             title: "League of Legends",
-            image: "../images/League of Legends.webp",
+            image: "images/League of Legends.webp",
             live: "9"
         }
     ];

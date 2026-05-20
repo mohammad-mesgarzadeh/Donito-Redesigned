@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/output.css">
+    <title>donito</title>
+
+</head>
+
+<body class="m-0 p-0 box-border text-right font-sans overflow-x-hidden bg-[#0b1a2f] font-Vazir">
+    <div id="overlay"
+        class="fixed inset-0 bg-black/20 backdrop-blur-[2px] z-40 opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out">
+    </div>
+
+
+    <nav class="relative bg-[#0f2237] shadow-md px-6 py-4 flex items-center justify-between z-39">
+
+        <ul class=" gap-8 flex  list-none ">
+            <figure href="/" data-link class="flex items-center justify-center group cursor-pointer">
+                <img src="images/donito.png" alt="donito"
+                    class="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
+                <span
+                    class="text-white  text-2xl  font-Dana block opacity-0 animate-fade-in-left group-hover:opacity-100">
+                    دونیتو
+                </span>
+            </figure>
+            <div class="hidden lg:flex items-center gap-8 animate-fade-in-top">
+                <li class="">
+                    <a href="features" data-link class="nav-link text-white  transition font-semibold  relative group">
+                        خدمات
+                        <span
+                            class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#2196f3] transition-all group-hover:w-full"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/Streamer" data-link class="nav-link text-white transition font-semibold  relative group">
+                        استریمرها
+                        <span
+                            class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#2196f3] transition-all group-hover:w-full"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/Creators" data-link class="nav-link text-white  transition font-semibold  relative group">
+                        تولید‌کنندگان
+                        <span
+                            class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#2196f3] transition-all group-hover:w-full"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/Contact" data-link class="nav-link text-white  transition font-semibold  relative group">
+                        پشتیبانی
+                        <span
+                            class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#2196f3] transition-all group-hover:w-full"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/Downloads" data-link
+                        class="nav-link text-white  transition font-semibold  relative group">
+                        دانلود نرم‌افزار
+                        <span
+                            class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#2196f3] transition-all group-hover:w-full"></span>
+                    </a>
+                </li>
+            </div>
+        </ul>
+
+        <button class="hidden lg:flex ">
+            <a href="#"
+                class="animate-fade-in-right ml-4 inline-flex items-center px-6 py-3 bg-[#2196f3] hover:bg-[#1976d2] text-white font-bold rounded-full shadow-lg transition-all duration-300 hover:scale-105">
+                ورود یا ثبت‌نام
+            </a>
+        </button>
+
+        <div class="lg:hidden">
+            <button id="menu-btn" class="text-white focus:outline-none cursor-pointer" title="menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+
+    </nav>
+
+    <div id="mobile-menu"
+        class="fixed top-0 right-0 hidden bg-[#0f2237] shadow-xl z-50 w-64 h-screen  transform transition-transform duration-300 text-white">
+        <ul class="flex flex-col gap-5 list-none p-4">
+            <figure href="/" data-link class="flex justify-between items-center group cursor-pointer">
+                <div class="flex justify-center items-center">
+                    <img src="images/donito.png" alt="donito"
+                        class="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
+                    <span
+                        class="text-white text-2xl font-bold font-Dana opacity-0 animate-fade-in-left group-hover:opacity-100">
+                        دونیتو
+                    </span>
+                </div>
+                <button id="close-menu" title="close-menu" class="cursor-pointer">
+                    <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 20.7888L20 6.78882M20 20.7888L6 6.78882" stroke="white" stroke-width="1.5"
+                            stroke-linecap="round" />
+                    </svg>
+                </button>
+            </figure>
+            <li>
+                <a href="features" data-link class="nav-link text-white  transition font-semibold  relative group">
+                    خدمات
+                    <span
+                        class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#2196f3] transition-all group-hover:w-full"></span>
+                </a>
+            </li>
+            <li>
+                <a href="/Streamer" data-link class="nav-link text-white transition font-semibold  relative group">
+                    استریمرها
+                    <span
+                        class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#2196f3] transition-all group-hover:w-full"></span>
+                </a>
+            </li>
+            <li>
+                <a href="/Creators" data-link class="nav-link text-white  transition font-semibold  relative group">
+                    تولید‌کنندگان
+                    <span
+                        class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#2196f3] transition-all group-hover:w-full"></span>
+                </a>
+            </li>
+            <li>
+                <a href="/Contact" data-link class="nav-link text-white  transition font-semibold  relative group">
+                    پشتیبانی
+                    <span
+                        class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#2196f3] transition-all group-hover:w-full"></span>
+                </a>
+            </li>
+            <li>
+                <a href="/Downloads" data-link class="nav-link text-white  transition font-semibold  relative group">
+                    دانلود نرم‌افزار
+                    <span
+                        class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#2196f3] transition-all group-hover:w-full"></span>
+                </a>
+            </li>
+
+            <button class="">
+                <a href="#"
+                    class="animate-fade-in-left ml-4 inline-flex items-center px-6 py-3 bg-[#2196f3] hover:bg-[#1976d2] text-white font-bold rounded-full shadow-lg transition-all opacity-0 duration-300 hover:scale-105">
+                    ورود یا ثبت‌نام
+                </a>
+            </button>
+
+        </ul>
+    </div>
+
+
+    <div id="app" class="py-9 px-6 md:px-20 mx-auto container"></div>
+
+    <footer class="relative overflow-hidden   text-white">
+        <div class="relative z-10 max-w-7xl mx-auto px-5 py-16">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-14">
+                <div class="flex flex-col items-center lg:items-start text-center lg:text-right">
+                    <h2 class="text-3xl font-Dana mb-4">
+                        دونیتو
+                    </h2>
+
+                    <p class="text-gray-300 leading-8 max-w-md mb-3">
+                        دونیتو بستری حرفه‌ای برای استریمرها و تولیدکنندگان محتواست
+                        تا حمایت‌های مالی مخاطبان خود را به زیباترین شکل دریافت و نمایش دهند.
+                    </p>
+                    <div class="flex items-center gap-5 flex-wrap justify-center">
+
+                        <a href="https://t.me/donito_platform"
+                            class="group w-14 h-14 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md flex items-center justify-center transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400/40 hover:bg-cyan-400/10">
+
+                            <img src="images/icons/telegram.png" alt="Telegram"
+                                class="w-6 h-6 opacity-80 group-hover:opacity-100">
+                        </a>
+
+                        <a href="https://x.com/donito_me"
+                            class="group w-14 h-14 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md flex items-center justify-center transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400/40 hover:bg-cyan-400/10">
+
+                            <svg data-v-24796459="" class="w-6 h-6 opacity-80 group-hover:opacity-100"
+                                aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" color="#1da1f2">
+                                <path class="" fill="currentColor"
+                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                </path>
+                            </svg>
+                        </a>
+
+                        <a href="https://www.instagram.com/donito.me"
+                            class="group w-14 h-14 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md flex items-center justify-center transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400/40 hover:bg-cyan-400/10">
+
+                            <img src="images/icons/instagram.png" alt="Instagram"
+                                class="w-6 h-6 opacity-80 group-hover:opacity-100">
+                        </a>
+
+                        <a href="https://www.aparat.com/donito_platform"
+                            class="group w-14 h-14 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md flex items-center justify-center transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400/40 hover:bg-cyan-400/10">
+
+                            <img src="images/icons/Aparat.png" alt="Aparat"
+                                class="w-6 h-6 opacity-80 group-hover:opacity-100">
+                        </a>
+
+                        <a href="https://rubika.ir/donito_platform"
+                            class="group w-14 h-14 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md flex items-center justify-center transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400/40 hover:bg-cyan-400/10">
+
+                            <img src="images/icons/Rubika.png" alt="Robika"
+                                class="w-6 h-6 opacity-80 group-hover:opacity-100">
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center lg:items-end">
+
+                    <figure class="mb-6">
+                        <img src="images/logo.png" alt="Donito Logo"
+                            class="w-28 drop-shadow-[0_0_25px_rgba(34,211,238,0.25)]">
+                    </figure>
+
+                </div>
+
+            </div>
+
+            <p
+                class="mt-14 pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
+                © کپی‌رایت 2024، تمامی حقوق متعلق است به دونیتو - Donito</p>
+
+        </div>
+
+    </footer>
+
+    <script src="app.js" type="module"></script>
+</body>
+
+</html>

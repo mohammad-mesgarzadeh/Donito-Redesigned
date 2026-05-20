@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: 'Vazir';
-    src: url('../font/Vazir/Vazir-FD.woff');
+    src: url('font/Vazir/Vazir-FD.woff');
 }
 
 .font-Vazir {
